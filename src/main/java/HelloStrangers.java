@@ -9,7 +9,7 @@ public class HelloStrangers {
         int count = scanner.nextInt();
         scanner.nextLine();
 
-        if (count < 0 ) {
+        if (count < 0) {
             System.out.println("Seriously? Why so negative?");
         } else if (count == 0) {
             System.out.println("Oh, it looks like there is no one here");
@@ -18,9 +18,7 @@ public class HelloStrangers {
 
             for (int i = 0; i < count; i++) {
                 String name = scanner.nextLine();
-                if (!name.isEmpty()) {
-                    names.add(name);
-                }
+                names.add(name);
             }
 
             for (String name : names) {
