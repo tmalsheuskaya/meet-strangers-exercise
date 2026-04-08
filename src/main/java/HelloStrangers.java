@@ -6,7 +6,8 @@ public class HelloStrangers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int count = Integer.parseInt(scanner.nextLine().trim());
+        int count = scanner.nextInt();
+        scanner.nextLine();
 
         if (count < 0 ) {
             System.out.println("Seriously? Why so negative?");
@@ -16,7 +17,10 @@ public class HelloStrangers {
             List<String> names = new ArrayList<>();
 
             for (int i = 0; i < count; i++) {
-                names.add(scanner.nextLine().trim());
+                String name = scanner.nextLine();
+                if (!name.isEmpty()) {
+                    names.add(name);
+                }
             }
 
             for (String name : names) {
