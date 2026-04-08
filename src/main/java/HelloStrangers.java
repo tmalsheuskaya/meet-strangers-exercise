@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class HelloStrangers {
@@ -14,14 +12,8 @@ public class HelloStrangers {
         } else if (count == 0) {
             System.out.println("Oh, it looks like there is no one here");
         } else {
-            List<String> names = new ArrayList<>();
-
             for (int i = 0; i < count; i++) {
                 String name = scanner.nextLine();
-                names.add(name);
-            }
-
-            for (String name : names) {
                 System.out.println("Hello, " + name);
             }
         }
